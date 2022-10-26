@@ -1,5 +1,21 @@
 @import 'libs/bootstrap-reboot.min'
 @import 'base/variables'
 
+@import 'blocks/_header'
+
 *
-	font-family: 'Roboto', sans-serif
+    font-family: 'Roboto', sans-serif
+
+body, 
+html 
+    min-width: 320px
+    height: 100%
+
+.page
+    min-height: 100vh
+    display: grid
+    grid-template-rows: auto 1fr auto 
+    overflow: hidden
+
+.container
+    padding: 0 20px
