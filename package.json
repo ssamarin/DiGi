@@ -32,5 +32,8 @@
     "> 1%",
     "maintained node versions",
     "not dead"
-  ]
+  ],
+  "dependencies": {
+    "slick-carousel": "^1.8.1"
+  }
 }
