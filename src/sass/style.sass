@@ -17,9 +17,12 @@ html
 
 .page
     min-height: 100vh
-    display: grid
-    grid-template-rows: auto 1fr auto 
+    display: flex
+    flex-direction: column
     overflow: hidden
+
+.main
+    flex: 1 1 auto
 
 .container
     padding: 0 20px
@@ -32,9 +35,18 @@ h5,
 h6
     margin: 0
 
+ul,
+ol,
+li
+    margin: 0
+    padding: 0
+    list-style: none
+
+button
+    padding: 0
 
 
 @import 'blocks/_header'
-@import 'blocks/_media'
 @import 'blocks/_promo'
+@import 'blocks/_media'
 

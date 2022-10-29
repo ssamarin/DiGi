@@ -1,3 +1,4 @@
+
 @media (min-width: 640px)
     .container
         padding: 0 30px
@@ -7,6 +8,55 @@
             margin-left: 14px
         &__wrapper
             min-height: 100px
+        
+    .promo 
+        min-height: 386px
+
+    
+    .top-slider
+        &__item 
+            min-width: 386px
+        &__title 
+            padding: 50px 0 15px
+            margin: 0 auto 30px
+            max-width: 522px
+            font-size: 3.75em
+            line-height: 100%
+        &__btn
+            padding: 16px 45px
+            margin: 0 auto 113px
+            display: block
+            font-size: 1.12em
+            font-weight: 500
+            border: none
+            border-radius: 3px 
+            transition: 0.9s all
+            background-color: $main-color
+            color: $bg-color
+            &:hover
+                transform: scale(1.1)
+                
+        .slick
+            &-dots
+                bottom: 50px
+            &-arrow
+                visibility: visible
+                width: 56px
+                height: 56px
+                position: absolute
+                right: 0
+                z-index: 1
+                outline: none
+                border: none
+            &-prev 
+                background-color: $main-color
+                top: calc(50% -  56px)
+            &-next 
+                background-color: $bg-color 
+                bottom: calc(50% -  56px)
+
+                
+
 
 
 @media (min-width: 768px)
@@ -16,6 +66,23 @@
     .header
         &__link
             margin-left: 0 
+    
+    .top-slider
+        &__item
+            min-height: 465px
+        &__title
+            margin: 0 auto
+            padding: 87px 0 0 
+            &::after
+                display: none
+        &__descr
+            margin: 0 auto
+            padding: 25px 0 32px
+            display: block
+            width: 587px
+            font-family: 'RobotoCondensed-Regular'
+            line-height: 111%
+            font-size: 18px
 
 
 @media (min-width: 1024px)
@@ -23,6 +90,18 @@
         max-width: 1200px
         margin: 0 auto
         padding: 0 40px
+
+    .top-slider
+        &__item
+            min-height: 618px
+        &__title
+            padding-top: 101px
+            max-width: 750px
+            font-size: 84px
+            letter-spacing: 2px
+            line-height: 100%
+        .slick-dots
+            bottom: 80px
 
 
 @media (min-width: 1440px)
@@ -32,3 +111,15 @@
     .header
         &__btn
             margin-right: 90px
+    
+    .top-slider
+        &__item
+            min-height: 668px
+        &__title 
+            padding-top: 107px
+            max-width: 865px
+            font-size: 96px
+        &__descr
+            width: 886px
+            font-size: 24px
+            line-height: 108%
