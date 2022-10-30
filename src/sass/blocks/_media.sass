@@ -1,4 +1,3 @@
-
 @media (min-width: 640px)
     .container
         padding: 0 30px
@@ -84,6 +83,19 @@
             line-height: 111%
             font-size: 18px
 
+    .call
+        text-align: left
+        &__wrapper
+            display: flex
+            justify-content: space-between
+            align-items: center
+        &__text
+            max-width: 427px
+        &__title
+            font-size: 24px
+        &__descr
+            font-size: 16px
+
 
 @media (min-width: 1024px)
     .container
@@ -102,6 +114,10 @@
             line-height: 100%
         .slick-dots
             bottom: 80px
+
+    .call
+        &__text
+            max-width: 450px
 
 
 @media (min-width: 1440px)
@@ -123,3 +139,16 @@
             width: 886px
             font-size: 24px
             line-height: 108%
+        .slick
+            &-arrow
+                width: 70px
+                height: 70px
+            &-prev
+                top: calc(50% - 70px)
+            &-next
+                bottom: calc(50% - 70px)
+    .call
+        &__wrapper
+            padding: 0 80px
+        &__text
+            max-width: 449px
