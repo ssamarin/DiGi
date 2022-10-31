@@ -11,6 +11,7 @@ body,
 html 
     min-width: 320px
     height: 100%
+    color: $default-color
 
 *
     font-family: 'Roboto-Regular', 'Arial', 'sans-serif'
@@ -35,6 +36,10 @@ h5,
 h6
     margin: 0
 
+a
+    text-decoration: none
+    color: inherit
+
 ul,
 ol,
 li
@@ -45,9 +50,27 @@ li
 button
     padding: 0
 
+.title 
+    padding-bottom: 20px
+    position: relative
+    font-size: 24px
+    font-family: 'Roboto Condensed'
+    font-weight: 400
+    &::after
+        margin: 0 auto
+        content: ""
+        position: absolute
+        bottom: 0
+        right: 0
+        left: 0
+        width: 100px
+        height: 8px
+        background-color: $main-color
+
 
 @import 'blocks/_header'
 @import 'blocks/_promo'
 @import 'blocks/_call'
+@import 'blocks/_services'
 @import 'blocks/_media'
 
