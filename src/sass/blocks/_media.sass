@@ -2,12 +2,14 @@
     .container
         padding: 0 30px
 
+
     .header
         &__link
             margin-left: 14px
         &__wrapper
             min-height: 100px
-        
+
+
     .promo 
         min-height: 386px
 
@@ -55,7 +57,48 @@
                 bottom: calc(50% -  56px)
 
                 
-
+    .services
+        padding: 25px 0 0
+        &__title
+            margin-bottom: 20px
+            padding-bottom: 0
+            font-size: 48px
+            &::after
+                display: none
+        &__subtitle
+            margin: 0 auto 31px 
+            padding-bottom: 38px
+            position: relative
+            font-size: 28px
+            &::after
+                content: ""
+                margin: 0 auto
+                position: absolute
+                bottom: 0
+                left: 0
+                right: 0
+                width: 100px
+                height: 8px
+                background-color: $main-color
+        &__descr
+            font-size: 18px
+            line-height: 120%
+        &__items
+            margin: 0 -25px
+            display: flex
+            flex-wrap: wrap
+        &__item
+            width: 50%
+            &:nth-last-child(even)
+                border-left: none 
+            &:nth-last-child(odd)
+                border-right: none     
+            &:nth-child(7)
+                border-bottom: none                
+            &:last-child
+                border-bottom: none
+            &-icons
+                margin-bottom: 14px
 
 
 @media (min-width: 768px)
@@ -95,6 +138,37 @@
             font-size: 24px
         &__descr
             font-size: 16px
+
+
+    .services
+        padding: 50px 0 0
+        &__title
+            margin-bottom: 30px
+        &__subtitle
+            text-align-last: left
+            &::after
+                margin-left: 0
+        &__descr
+            margin-bottom: 27px
+            text-align-last: left
+        &__items
+            margin: 0 -35px
+        &__item
+            padding: 0 65px
+            min-height: 334px
+            &:hover
+                padding: 0 18px
+                .services__item-inner
+                    padding: 35px 60px 5px 
+                    min-height: 288px
+            
+
+
+
+
+
+
+
 
 
 @media (min-width: 1024px)
