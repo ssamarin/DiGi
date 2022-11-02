@@ -2,17 +2,14 @@
     .container
         padding: 0 30px
 
-
     .header
         &__link
             margin-left: 14px
         &__wrapper
             min-height: 100px
 
-
     .promo 
         min-height: 386px
-
     
     .top-slider
         &__item 
@@ -55,7 +52,6 @@
             &-next 
                 background-color: $bg-color 
                 bottom: calc(50% -  56px)
-
                 
     .services
         padding: 25px 0 0
@@ -139,18 +135,17 @@
         &__descr
             font-size: 16px
 
-
     .services
         padding: 50px 0 0
         &__title
             margin-bottom: 30px
         &__subtitle
-            text-align-last: left
+            text-align: left
             &::after
                 margin-left: 0
         &__descr
             margin-bottom: 27px
-            text-align-last: left
+            text-align: left
         &__items
             margin: 0 -35px
         &__item
@@ -161,15 +156,7 @@
                 .services__item-inner
                     padding: 35px 60px 5px 
                     min-height: 288px
-            
-
-
-
-
-
-
-
-
+             
 
 @media (min-width: 1024px)
     .container
@@ -192,6 +179,34 @@
     .call
         &__text
             max-width: 450px
+
+    .services
+        padding: 52px 0 0
+        &__title
+            margin-bottom: 60px
+        &__subtitle
+            padding-bottom: 46px 
+            margin-bottom: 40px
+        &__descr
+            margin: 0 
+            margin-bottom: 32px
+            max-width: 608px
+        &__item
+            padding: 0 17px
+            width: 25%
+            min-height: 277px 
+            &:nth-last-child(odd)
+                border-right: 1px solid $bg-color           
+            &:nth-child(7)
+                border-bottom: 1px solid $bg-color                
+            &:last-child
+                border-bottom: 1px solid $bg-color
+            &:hover
+                padding: 0 17px
+                .services__item-inner
+                    margin: 10px 0 
+                    padding: 21px 9px 5px 
+                    min-height: 255px
 
 
 @media (min-width: 1440px)
@@ -221,8 +236,39 @@
                 top: calc(50% - 70px)
             &-next
                 bottom: calc(50% - 70px)
+
     .call
         &__wrapper
             padding: 0 80px
         &__text
             max-width: 449px
+    .services
+        padding: 0
+        &__wrapper
+            display: flex
+            justify-content: space-between
+        &__text
+            margin-right: 100px
+            min-width: 350px
+        &__title
+            margin: 90px 0 70px
+            text-align: left
+        &__subtitle
+            padding-bottom: 38px 
+            margin-bottom: 40px
+        &__items
+            margin: 0 -200px 0 0
+        &__item
+            padding: 0 5px
+            width: 230px
+            height: 277px      
+            &:nth-child(4)
+                border-right: none
+            &:nth-child(8)
+                border-right: none
+            &:hover
+                padding: 0 5px
+                .services__item-inner
+                    margin: 5px 0 
+                    padding: 10px 3px 5px 
+                    min-height: 255px

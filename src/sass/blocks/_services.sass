@@ -34,15 +34,23 @@
         &:hover
             .services__item-text
                 display: block
+                opacity: 1
+                height: auto
+                overflow: visible
             .services__item-link
                 display: block
                 text-decoration: none
-                color: $main-color    
+                color: $main-color
+                opacity: 1
+                height: auto
+                overflow: visible    
             .services__item-inner 
                 margin: 18px 0
                 padding: 40px 16px
                 min-height: 277px
                 border: 4px solid $main-color
+        &-inner
+            transition: 1s all
         &-name
             margin-bottom: 30px
             font-family: 'RobotoCondensed-Bold'
@@ -56,11 +64,9 @@
         &-text
             margin: 0 auto 17px
             max-width: 222px
-            display: none
             font-family: 'Dosis-Medium'
             font-weight: 500
         &-link
-            display: none
             font-family: 'RobotoCondensed-Bold'
             font-weight: 700
             font-size: 16px
@@ -68,6 +74,12 @@
             text-decoration: none
             text-transform: uppercase
             color: $main-color
-   
+
+.services__item-text,
+.services__item-link
+    height: 0
+    opacity: 0
+    overflow: hidden
+    transition: .5s all
 
 
