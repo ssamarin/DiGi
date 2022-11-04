@@ -4,10 +4,21 @@
     font-family: 'Roboto Condensed'
     &__title
         margin-bottom: 47px
+        position: relative
         font-weight: 400
         font-size: 38px
         letter-spacing: 2px
         color: $main-color
+        &::after
+            content: ""
+            margin: 0 auto
+            position: absolute
+            bottom: -20px
+            right: 0
+            left: 0
+            width: 100px
+            height: 8px
+            background-color: $main-color
     &__subtitle
         margin: 0 auto 20px
         font-family: 'Roboto'
