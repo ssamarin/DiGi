@@ -174,18 +174,19 @@
 
     .projects 
         padding: 80px 0 60px
+        &__items 
+            display: flex
+            justify-content: space-around
+            flex-wrap: wrap
         &__item 
             &-img 
-                padding: 5px 20px
-                max-width: 318px
-                max-height: 460px
-                border-radius: 4px
+                padding: 10px 14px
+                max-width: 317px
+                max-height: 282px
             &__inner
-                min-height: 417px
+                min-height: 256px
             &-link
                 padding: 30px 0
-                font-size: 20px
-                line-height: 23px
              
 
 @media (min-width: 1024px)
@@ -238,6 +239,17 @@
                     padding: 21px 9px 5px 
                     min-height: 255px
 
+    .projects 
+        padding: 80px 0 60px
+        &__items 
+            display: flex
+            justify-content: center
+            flex-wrap: wrap
+        &__item 
+            &-img 
+                margin: 0 12px
+                min-width: 318px
+     
 
 @media (min-width: 1440px)
     .container
@@ -302,3 +314,15 @@
                     margin: 5px 0 
                     padding: 10px 3px 5px 
                     min-height: 255px
+                
+    .projects 
+        padding: 80px 0 60px
+        &__items 
+            display: flex
+            justify-content: space-between
+            flex-wrap: nowrap
+            gap: 20px
+        &__item 
+            &-img 
+                margin: 0 
+
