@@ -135,6 +135,28 @@
             width: 100%
             font-size: 32px
 
+    .footer 
+        padding: 84px 0 40px
+        text-align: left
+        &__title 
+            font-size: 24px
+            line-height: 108%
+        &__social 
+            min-height: 60px
+            flex-direction: row
+            justify-content: center
+            &-item
+                min-width: 142px
+                min-height: 55px
+                display: flex
+                justify-content: center
+                align-items: center
+                border: 1px solid #7EBF84
+                border-right: none 
+                &:first-child
+                    border-left: none
+
+
 @media (min-width: 768px)
     .container
         padding: 0 40px
@@ -244,7 +266,14 @@
         &__text 
             margin: 0 auto 40px
             font-size: 32px
-             
+
+    .footer 
+        padding: 114px 0 69px
+        &__title 
+            font-size: 33px
+            line-height: 89% 
+        &__social
+            width: 100%    
              
 
 @media (min-width: 1024px)
@@ -320,6 +349,12 @@
         &__text         
             margin-bottom: 20px
             line-height: 24px
+    .footer
+        &__title 
+            font-size: 32px
+            line-height: 100%
+        &__social 
+            min-width: 100%
      
 
 @media (min-width: 1440px)
@@ -411,4 +446,8 @@
 
     .quote 
         &__text 
+            font-size: 36px
+
+    .footer
+        &__title
             font-size: 36px
